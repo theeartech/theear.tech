@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The EAR</title>
+  <title>The EAR – Coming Soon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -28,28 +28,40 @@
     }
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       font-weight: 700;
-    }
-    h2 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
     }
     p {
       font-size: 1rem;
       font-weight: 400;
-      max-width: 700px;
-      margin-bottom: 1rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
     }
-    .tagline {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 400px;
+    }
+    input[type=\"text\"],
+    input[type=\"email\"] {
+      padding: 0.75rem 1rem;
+      border: 1px solid #444;
+      border-radius: 4px;
+      background: #0e0e0f;
+      color: #fff;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.75rem 1rem;
+      background: #4da6ff;
+      color: #0e0e0f;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
       font-weight: 700;
-      margin-top: 2rem;
-      font-size: 1.25rem;
-    }
-    .contact {
-      margin-top: 2rem;
-      font-size: 0.9rem;
+      cursor: pointer;
     }
     .footer {
       margin-top: 2rem;
@@ -68,24 +80,15 @@
   </style>
 </head>
 <body>
-  <h1>The EAR</h1>
-  <h2>Discreet. Powerful. Ready to Present.</h2>
+  <h1>The EAR is Coming Soon</h1>
+  <p>Join the list and be first to know when we launch.</p>
 
-  <p>One device. Three roles.</p>
-  <p>The EAR is a wearable audio and presentation system <br>
-     designed for creators, speakers, and performers.</p>
-  <p>It supports discreet playback, slide control, and real-time <br>
-     signal clarity — all from the palm of your hand.</p>
-
-  <p class="tagline">
-    • Compact handheld controller with embedded audio<br>
-    • Global-ready firmware with no pairing required<br>
-    • Kickstarter launch February 2026
-  </p>
-
-  <div class="contact">
-    📩 <a href="mailto:hello@theear.tech" style="color:#4da6ff; text-decoration: none;">hello@theear.tech</a>
-  </div>
+  <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name (optional)">
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="_gotcha" style="display:none">
+    <button type="submit">Notify Me</button>
+  </form>
 
   <div class="footer">
     © 2025 The EAR. All rights reserved.
